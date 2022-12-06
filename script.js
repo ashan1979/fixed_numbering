@@ -127,6 +127,13 @@ function displayMenuButtons() {
             return values;
         },
         ["all"]
-    )
+    );
+
+    const categoryBtns = categories
+    .map(function(category) {
+      return `<button type="button" class="filter-btn" data-id=${category}>
+      ${category}
+      </button>`
+    })
 }
 
